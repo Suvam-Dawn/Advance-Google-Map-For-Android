@@ -221,8 +221,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         /*This is for marker info-window text and set Marker into map*/
         mMap.addMarker(new MarkerOptions().position(currentlocationlatlong)
-                .title("Marker Title")
-                .snippet("Marker Snippet"));
+                .title("Marker Location")
+                .snippet("Lat : " + String.valueOf(cur_latitude) + "\nLng : " + String.valueOf(cur_longitude)));
         /*This is handle zoom and Camera view for google map*/
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentlocationlatlong, int_zoom_value));
         if(mMap!=null) {
@@ -354,7 +354,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 mMap.clear();
             }
             mMap.addMarker(new MarkerOptions().position(currentlocationlatlong)
-                    .title("Marker Current Location")
+                    .title("Marker Location")
                     .snippet("Lat : " + String.valueOf(cur_latitude) + "\nLng : " + String.valueOf(cur_longitude)));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentlocationlatlong, int_zoom_value));
             CameraUpdate zoom = CameraUpdateFactory.zoomTo(--int_zoom_value);
