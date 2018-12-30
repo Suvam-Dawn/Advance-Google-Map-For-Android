@@ -24,5 +24,12 @@
                 android:title="Aubergine" />
         </menu>
     </item>
+    <item android:title="Details">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:title="About" />
+        </menu>
+    </item>
 
 </menu>
