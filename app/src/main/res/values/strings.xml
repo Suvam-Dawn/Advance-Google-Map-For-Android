@@ -5,8 +5,7 @@
     <string name="nav_header_title">Suvam Dawn</string>
     <string name="nav_header_subtitle">suvamdawn94@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <!--<string name="google_maps_key">YOUR_API_KEY</string>-->
-    <string name="google_maps_key">AIzaSyD81bPtr5X1zHDGWY6GoXT9t3yrrGYJqgA</string>
+    <string name="google_maps_key">YOUR_API_KEY</string>
 
 
 
